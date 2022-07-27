@@ -94,7 +94,7 @@ Plus généralement, l_opérateur renvoie la valeur de la première opérande fa
             console.log("X1=X2 est :" + resultat);
         }
         else {
-            console.log("Pas de réponse car Delta ne peut être négatif");
+            console.log("Pas de réponse car Delta ne peut pas être négatif");
         }
 
     }
