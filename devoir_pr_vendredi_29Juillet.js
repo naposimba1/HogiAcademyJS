@@ -1,11 +1,6 @@
 //D A D POUR vendredi
 
 
-
-
-
-
-
 //1. Déterminer le max entre  let a = 10; let b = 20; let c = 30;
 
 
