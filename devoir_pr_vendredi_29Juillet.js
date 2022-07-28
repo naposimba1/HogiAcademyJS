@@ -71,16 +71,16 @@ Plus généralement, l_opérateur renvoie la valeur de la première opérande fa
 
     // 4. Résoudre l'équation du secon de degré du type ax**2+bx+c=0; a=10, b=8, c=1;
 
-    let a = 5;
-    let b = 2;
-    let c = 5;
+    let a = prompt("Donner la valeur de a");
+    let b = prompt("Donner la valeur de b");
+    let c = prompt("Donner la valeur de c");
     let delta = b * b - 4 * (a * c);
     if (delta > 0) {
         y = Math.sqrt(delta);
-        let x1 = (b + y) / 2;
-        let x2 = (b - y) / 2;
-        document.write("X1 : " + x1 + "<br />");
-        document.write("X2 : " + x2);
+        let x1 = (-b + y) / 2;
+        let x2 = (-b - y) / 2;
+        console.log("X1 : " + x1);
+        console.log("X2 : " + x2);
     }
     else {
         if (delta == 0) {
@@ -93,6 +93,3 @@ Plus généralement, l_opérateur renvoie la valeur de la première opérande fa
         }
 
     }
-
-
-}
