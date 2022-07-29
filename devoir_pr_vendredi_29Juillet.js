@@ -4,7 +4,10 @@
 //1. Déterminer le max entre  let a = 10; let b = 20; let c = 30;
 
 
-let a = 40; let b = 60; let c = 80;
+let a = prompt("donner la valeur de a");
+let b = prompt("donner la valeur de b");
+let c = prompt("donner la valeur de c");
+
 if (a > b && b < c) {
     console.log("a est max");
 
@@ -21,7 +24,9 @@ if (a > b && b < c) {
 
 
 
-let a = 40; let b = 20; let c = 41;
+let a = prompt("donner la valeur de a");
+let b = prompt("donner la valeur de b");
+let c = prompt("donner la valeur de c");
 if (a > b && b < c) {
     console.log("a est max");
 
