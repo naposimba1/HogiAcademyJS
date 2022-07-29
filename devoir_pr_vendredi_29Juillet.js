@@ -74,9 +74,12 @@ Plus généralement, l_opérateur renvoie la valeur de la première opérande fa
     let a = prompt("Donner la valeur de a");
     let b = prompt("Donner la valeur de b");
     let c = prompt("Donner la valeur de c");
+
     let delta = b * b - 4 * (a * c);
     if (delta > 0) {
         y = Math.sqrt(delta);
+        // x1= (-b+y)/2
+        // x2=(-b-y)/2
         let x1 = (-b + y) / 2;
         let x2 = (-b - y) / 2;
         console.log("X1 : " + x1);
@@ -85,7 +88,7 @@ Plus généralement, l_opérateur renvoie la valeur de la première opérande fa
     else {
         if (delta == 0) {
 
-            let resultat = b / 2
+            let resultat = -b / 2
             console.log("X1=X2 est :" + resultat);
         }
         else {
