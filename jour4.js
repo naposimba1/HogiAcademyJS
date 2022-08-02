@@ -31,17 +31,17 @@ for (let i = 0, i<= 50, i++) {
 
 
 const tableau = [52, 12, 35, 26, 10, 2, 8, 30, 7, 81, 90, 20, 17, 13, 19];
-int i = 0;
-const Paire[];
-const Impaire[];
-for (i = 0; i < tableau.length; i++) {
-    if (tableau[i] % 2 == 0) {
-        Paire.add(i);
-    }
-    else {
-        Impaire.add(i);
-    }
-}
+// int i = 0;
+// const Paire[];
+// const Impaire[];
+// for (i = 0; i < tableau.length; i++) {
+//     if (tableau[i] % 2 == 0) {
+//         Paire.add(i);
+//     }
+//     else {
+//         Impaire.add(i);
+//     }
+// }
 
 // int MonTableau[] = {1,5,13,9,12,69,48,37,96,25,11,28,112,36,53,47,85,62,32,7,4,158,32,65,91,19,37,73,54,83};
 //     int TablPaire[];
@@ -85,11 +85,28 @@ console.log("Max:", max(tableau));
 //         minVal = tableau[i];
 // }
 
-const numbers = [45, 4, 9, 16, 25];
-let sum = numbers.reduce(myFunction);
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
 
-document.getElementById("demo").innerHTML = "The sum is " + sum;
+// document.getElementById("demo").innerHTML = "The sum is " + sum;
 
-function myFunction(total, value, index, array) {
-    return total + value;
+// function myFunction(total, value, index, array) {
+//     return total + value;
+// }
+
+
+//
+function check() {
+    var nbr;
+    nbr = Number(document.getElementById("entier").value);
+    if (nbr % 2 == 0) {
+        alert("Nombre pair");
+    }
+    else {
+        alert("Nombre impair");
+
+    }
 }
+
+// let a = prompt("Entrer la nombre à vérifier:"+a);
+//       <button onclick="check()">Vérifier</button>
