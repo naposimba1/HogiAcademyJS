@@ -117,3 +117,10 @@ function check() {
 
 // let a = prompt("Entrer la nombre à vérifier:"+a);
 //       <button onclick="check()">Vérifier</button>
+
+
+
+/* sfsfbnfp
+fbdfkbd^b
+
+*/

@@ -29,6 +29,9 @@ const CNI = {
     Fonction: "Informaticien",
     NUMCNI: "0201/324.126 Délivrée le 19/06/2017"
 };
+//Pour récupérer les valeurs d'un objet, on fait    CNI.NOM et la machine affiche le nom
+
+
 
 
 
