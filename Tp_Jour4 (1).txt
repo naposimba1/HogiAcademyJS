@@ -1,0 +1,9 @@
+Avec un tableau de votre choix : 
+	- trier le tableaux par ordre croissant
+	- cherchez le maximum et le minimum dans le tableau
+	- afficher les nombres pairs du tableau seulement
+	- affichez les nombres impairs du tableau seulement
+	- explorez d'autres methodes possibles applicables aux tableaux 
+
+
+https://www.google.com/search?q=comment+afficher+les+nombres+pairs+uniquement+dans+un+tableau+en+javascript&sxsrf=ALiCzsYep9MElLIdbl1iTgmccuNqV4f8WA%3A1659374571863&ei=6wvoYvyXNNeDlwS_yZygBA
