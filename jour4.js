@@ -22,3 +22,74 @@ for (let i = 0, i<= 50, i++) {
     console.log("Hello hogi");
 }
 
+//Devoir
+// Exercice java script
+//Exercice java script tableau
+// Kuraba ayandi ma méthode ari applicable dans un tableau en java script
+//kwiha tableau nini iri desordonné hama ukai tria selon les méthodes applicables ya tableau hama uka ordonna.
+//Explorer les méthodes appliquées au tableau en js
+
+
+const tableau = [52, 12, 35, 26, 10, 2, 8, 30, 7, 81, 90, 20, 17, 13, 19];
+int i = 0;
+const Paire[];
+const Impaire[];
+for (i = 0; i < tableau.length; i++) {
+    if (tableau[i] % 2 == 0) {
+        Paire.add(i);
+    }
+    else {
+        Impaire.add(i);
+    }
+}
+
+// int MonTableau[] = {1,5,13,9,12,69,48,37,96,25,11,28,112,36,53,47,85,62,32,7,4,158,32,65,91,19,37,73,54,83};
+//     int TablPaire[];
+//     int TablImpaire[];
+
+//         public void TrierTableau(int MonTableau[])
+//     {
+//         for(int i=0; i<MonTableau.length; i++)
+//         {
+
+//             if(MonTableau[i]%2 == 0)// Si pair
+//             {
+//                 TablPaire.add(i);
+//             }
+//             else// si impair
+//             {
+//                 TablImpaire.add(i);   
+//             }
+
+
+
+
+
+
+const comparer = (a, b) => b - a;  //Décroissant     a-b ordre décroissant
+tableau.sort(comparer);
+
+const min = tableau => tableau.reduce((c, d) => Math.min(c, d));
+const max = tableau => tableau.reduce((c, d) => Math.max(c, d));
+
+
+console.log("Min:", min(tableau));
+console.log("Max:", max(tableau));
+
+
+
+// for (let i = 0; i < tableau.length; i++) {
+//     if (tableau[i] < maxVal)
+//         maxVal = tableau[i];
+//     if (tableau[i] > minVal)
+//         minVal = tableau[i];
+// }
+
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);
+
+document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+    return total + value;
+}

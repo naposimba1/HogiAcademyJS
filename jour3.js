@@ -176,3 +176,4 @@ let i = 0;
 for (1 = 0, i < 51, i++) {
     console.log("Hello hogi");
 }
+
