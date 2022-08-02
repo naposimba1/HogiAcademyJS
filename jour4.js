@@ -97,14 +97,21 @@ console.log("Max:", max(tableau));
 
 //
 function check() {
-    var nbr;
-    nbr = Number(document.getElementById("entier").value);
-    if (nbr % 2 == 0) {
-        alert("Nombre pair");
-    }
-    else {
-        alert("Nombre impair");
+    var i;
+    const TablPaire = [];
+    const TablImpaire = [];
+    const nbr = [1, 5, 7, 12, 13, 4, 21, 27, 25];
+    nbr[i] = Number(document.getElementById("entier").value);
+    for (i = 0; i < nbr.length; i++) {
+        if (nbr[i] % 2 == 0) {
+            console.log("Nombre pair :" + TablPaire[i]);
 
+
+        }
+        else {
+            console.log("Nombre impair:" + TablImpaire[i]);
+
+        }
     }
 }
 
