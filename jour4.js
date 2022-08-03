@@ -31,6 +31,12 @@ for (let i = 0, i<= 50, i++) {
 
 
 const tableau = [52, 12, 35, 26, 10, 2, 8, 30, 7, 81, 90, 20, 17, 13, 19];
+function Even(item) {
+    return item % 2 == 0;
+}
+console.log(tableau.filter(Even));
+
+
 // int i = 0;
 // const Paire[];
 // const Impaire[];
