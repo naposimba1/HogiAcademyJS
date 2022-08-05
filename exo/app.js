@@ -52,7 +52,9 @@ if (result == trueResult) {
     console.log("T'as gagné");
 }
 else {
-    console.log("T'as échoué!!");
+    console.log("Oups!!! T'as échoué!!");
 }
+
+
 
 
