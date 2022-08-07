@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <title>UTUJAJURO</title>
+</head>
+
+<body id="body">
+
+
+
+    <div class="container">
+        <div class="te">
+            <H1>Imyibutsa imaze kuboneka</H1>
+            <div class="compteur"></div>
+        </div>
+        <div class="ecran">
+            <p>Imyibutsa</p>
+            <textarea name="Imyubtsa" id="input-value" cols="20" rows="10"></textarea>
+            <div class="imyibutsa">
+
+            </div>
+            <!-- <div id="display"> </div> -->
+        </div>
+
+        <div id="list">
+            <button onclick="Ajouter()">Insérer</button>
+            <button onclick="supprimer()">Supprimer</button>
+        </div>
+
+        <div id="conteneur"></div>
+        <div class="attention">
+            Si tu clique sur le mot déjà entré tu va l'effacer
+        </div>
+    </div>
+
+
+    <script>
+
+        function Ajouter() {
+            const child = document.createElement("div")
+
+            child.setAttribute("class", "umwibutsa");
+            const umwibutsa = document.getElementById("input-value")
+            child.innerHTML = umwibutsa.value;
+            const parent = document.getElementById("conteneur")
+
+            parent.appendChild(child)
+            // parent.insertBefore(parent, child);
+
+
+            // parent.appendChild(child);  c'est la même chose  parent.insertBefore(parent, child);
+
+
+            // child.innerHTML = "MErci"
+
+            // const body = document.getElementsById("body")
+            // body.insertBefore(body, div)
+        }
+
+
+        //Bouton pour la suppression
+        function Supprimer() {
+
+            // Declaring a variable to get select element
+            var a = document.getElementById("input-value");
+            var candidate = document.getElementById("conteneur");
+            var item = document.getElementById(conteneur.value);
+            a.removeChild(item);
+        }
+    </script>
+
+    <!-- TP pour Mardi, le 9/08/2022: Insérer les boutons modifier et supprimer -->
+</body>
+
+</html>

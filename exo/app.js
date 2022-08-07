@@ -3,22 +3,22 @@ console.log(nbQuestions);
 let quizBegin = true;
 console.log(quizBegin);
 alert("Bienvenu sur ce quiz! " + " \n " + nbQuestions + "3 questions seront posées");
-
-let result = prompt(`Question 1/3
+for (let i = 0; i <= 3; i++) {
+    let result = prompt(`Question 1/3
 Quel est l'âge du capitaine?
 1. 42
 2. 101
 3. 18`);
-let trueResult = 1;
-console.log(result);
+    let trueResult = 1;
+    console.log(result);
 
-if (result == trueResult) {
-    console.log("T'as gagné");
+    if (result == trueResult) {
+        console.log("T'as gagné");
+    }
+    else {
+        console.log("T'as échoué!!");
+    }
 }
-else {
-    console.log("T'as échoué!!");
-}
-
 //
 
 
