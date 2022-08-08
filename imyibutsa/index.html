@@ -20,19 +20,21 @@
         </div>
         <div class="ecran">
             <p>Imyibutsa</p>
-            <textarea name="Imyubtsa" id="input-value" cols="20" rows="10"></textarea>
+            <textarea name="Imyibutsa" id="input-value" cols="20" rows="10"></textarea>
             <div class="imyibutsa">
 
             </div>
             <!-- <div id="display"> </div> -->
         </div>
 
-        <div id="list">
-            <button onclick="Ajouter()">Insérer</button>
+
+
+        <button onclick="Ajouter()">Insérer</button>
+        <div class="btn">
             <button onclick="supprimer()">Supprimer</button>
         </div>
-
         <div id="conteneur"></div>
+
         <div class="attention">
             Si tu clique sur le mot déjà entré tu va l'effacer
         </div>
@@ -64,14 +66,24 @@
 
 
         //Bouton pour la suppression
-        function Supprimer() {
+        // function supprimer() {
+        //     let suppression = document.querySelectorAll("btn");
+        //     console.log(suppression);
+        // }
+        conteneur.addEventListener("click", function () {
 
-            // Declaring a variable to get select element
-            var a = document.getElementById("input-value");
-            var candidate = document.getElementById("conteneur");
-            var item = document.getElementById(conteneur.value);
-            a.removeChild(item);
-        }
+            function supprimer() {
+
+
+
+                var a = document.getElementById("conteneur");
+                var candidate = document.getElementById("conteneur");
+                var item = document.getElementById(conteneur.value);
+                a.remove(item);
+            }
+        }, false)
+
+
     </script>
 
     <!-- TP pour Mardi, le 9/08/2022: Insérer les boutons modifier et supprimer -->

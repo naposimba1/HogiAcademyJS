@@ -20,14 +20,14 @@
 }
 
 .conteneur {
-    display: flex;
+    /* display: flex;
     display: grid;
     justify-content: space-between;
     flex-direction: row;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 50px);
     grid-template-rows: repeat(3, 50px);
-
+    */
 }
 
 .compteur {
@@ -65,11 +65,13 @@ body {
     height: 50px;
     margin: 5px;
     padding: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
 
 
 
-    grid-template-columns: repeat(3, 50px);
-    grid-template-rows: repeat(3, 50px);
+
+    /* grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px); */
 
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
