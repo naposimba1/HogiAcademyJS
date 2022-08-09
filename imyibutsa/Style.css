@@ -9,6 +9,21 @@
 
 }
 
+.compteur {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 100%;
+    background-color: rgb(48, 41, 41);
+    border-radius: 20px;
+    height: 30px;
+}
+
+.ecran {
+    margin-left: auto;
+    margin-left: auto;
+}
+
+
 .attention {
     background-color: rgb(114, 191, 224);
     justify-content: center;
@@ -20,14 +35,19 @@
 }
 
 .conteneur {
-    /* display: flex;
+    display: flex;
     display: grid;
-    justify-content: space-between;
-    flex-direction: row;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(3, 50px);
-    grid-template-rows: repeat(3, 50px);
-    */
+    min-width: 150px;
+    width: 150px;
+    height: 80px;
+    background-color: cadetblue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    width: 100x;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .compteur {
@@ -38,6 +58,8 @@
 textarea {
     width: 350px;
     height: 80px;
+    margin-left: auto;
+    margin-left: auto;
 }
 
 

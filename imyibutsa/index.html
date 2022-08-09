@@ -28,12 +28,12 @@
         </div>
 
 
-
-        <button onclick="Ajouter()">Insérer</button>
         <div class="btn">
-            <button onclick="supprimer()">Supprimer</button>
+            <button onclick="ajouter()"> Insérer </button>
+            <button onclick="supprimer()"> Supprimer </button>
+            <button onclick="modifier()"> Modifier </button>
         </div>
-        <div id="conteneur"></div>
+        <div id="conteneur"> </div>
 
         <div class="attention">
             Si tu clique sur le mot déjà entré tu va l'effacer
@@ -43,7 +43,39 @@
 
     <script>
 
-        function Ajouter() {
+
+        // function creerBoutonElement(innerHTML, classe) {
+        //     const bouton = document.createElement("button")
+        //     bouton.innerHTML = innerHTML
+        //     bouton.setAttribute("class", classe)
+        //     return bouton
+        // }
+
+        // function addBoutons(parent) {
+        //     const boutondiv = document.createElement("div")
+        //     boutondiv.setAttribute("class", "buttons-group")
+
+        //     const Delete = creerBoutonElement("Supprimer", "btn-delete")
+        //     const Update = creerBoutonElement("Modifier", "btn-modify")
+
+
+        //     btnDelete.addEventListener("click", () => {
+
+
+        //         function supprimer() {
+        //             var a = document.getElementById("conteneur");
+        //             var candidate = document.getElementById("conteneur");
+        //             var item = document.getElementById(conteneur.value);
+        //             a.remove(item);
+        //         }
+
+
+        //         alert("Supprime cliqué ")
+        //     }, false)
+
+        // }
+
+        function ajouter() {
             const child = document.createElement("div")
 
             child.setAttribute("class", "umwibutsa");
@@ -52,33 +84,55 @@
             const parent = document.getElementById("conteneur")
 
             parent.appendChild(child)
-            // parent.insertBefore(parent, child);
+        }
+        // parent.insertBefore(parent, child);
 
 
-            // parent.appendChild(child);  c'est la même chose  parent.insertBefore(parent, child);
+        // parent.appendChild(child);  c'est la même chose  parent.insertBefore(parent, child);
 
 
-            // child.innerHTML = "MErci"
+        // child.innerHTML = "MErci"
 
-            // const body = document.getElementsById("body")
-            // body.insertBefore(body, div)
+        // const body = document.getElementsById("body")
+        // body.insertBefore(body, div)
+
+
+
+        // conteneur.addEventListener("click", function () {
+
+        //     function supprimer() {
+        //         var a = document.getElementById("conteneur");
+        //         var candidate = document.getElementById("conteneur");
+        //         var item = document.getElementById(conteneur.value);
+        //         a.remove(item);
+        //     }
+        // }, false)
+
+
+
+
+
+
+        function supprimer() {
+            var a = document.getElementById("conteneur");
+            var candidate = document.getElementById("conteneur");
+            var item = document.getElementById(conteneur.value);
+            a.remove(item);
         }
 
 
-        //Bouton pour la suppression
-        // function supprimer() {
-        //     let suppression = document.querySelectorAll("btn");
-        //     console.log(suppression);
-        // }
-        conteneur.addEventListener("click", function () {
 
-            function supprimer() {
-                var a = document.getElementById("conteneur");
-                var candidate = document.getElementById("conteneur");
-                var item = document.getElementById(conteneur.value);
-                a.remove(item);
-            }
-        }, false)
+
+        function(modifier) {
+
+
+            let element = document.getElementById("conteneur");
+            if (element.value == "Hide Result")
+                element.value = "Show Result";
+            else
+                element.value = "Hide Result";
+        }
+
 
 
     </script>
